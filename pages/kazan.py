@@ -33,13 +33,23 @@ st.header("🌋地震火山情報XML",anchor='section1',divider='rainbow')
 mountain = st.selectbox("**火山を選択**",kazan,index = 0 )
 
 def linkurl(x):
-  r = requests.get(x)
-  soup = BeautifulSoup(r.text.encode(r.encoding),'lxml-xml')
-  description = soup.find("""jmx_eb:Coordinate""").get("description")
-  m = list(filter(None, soup.get_text().splitlines()))
-  body = [m[0],m[13],m[16],description,m[18],"M"+m[19],m[-4]]
-  return st.table(body)
-  #return st.table(m) #全データー出力
+   r = requests.get(x)
+   soup = BeautifulSoup(r.text.encode(r.encoding),'lxml-xml')
+   koumoku = []
+
+   tags = ["Title","ReportDateTime","Headline","""jmx_eb:Coordinate""","Name","""jmx_eb:Magnitude""",'ForecastComment']
+
+   for a in tags :
+      if a == "Headline":
+        koumoku.append(soup.find(a).find("Text").get_text()) 
+      elif a == """jmx_eb:Coordinate""":
+        koumoku.append(soup.find(a).get("description") )
+        koumoku.append(soup.find(a).get_text()) 
+      elif a == """jmx_eb:Magnitude""":
+        koumoku.append("M "+soup.find(a).get_text())      
+      else:
+        koumoku.append(soup.find(a).get_text())
+   return st.table(koumoku)
 
 def button(keyword):
   keyword = keyword.reset_index(drop=True)
