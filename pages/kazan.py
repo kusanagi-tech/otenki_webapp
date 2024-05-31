@@ -68,6 +68,7 @@ keyword = df[df[meisyou].str.contains(mountain)]
 if mountain == "最新10件" :
   st.table(df[meisyou].head(10))
 elif mountain == "震源・震度情報" : 
+  keyword = df[df[meisyou].str.contains("震源")]
   button(keyword)
   st.table(keyword[meisyou].head(10)) 
 else :
