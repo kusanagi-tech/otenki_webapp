@@ -37,14 +37,16 @@ def linkurl(x):
    soup = BeautifulSoup(r.text.encode(r.encoding),'lxml-xml')
    koumoku = []
 
-   tags = ["Title","ReportDateTime","Headline","""jmx_eb:Coordinate""","Name","""jmx_eb:Magnitude""",'ForecastComment']
+   tags = ["Title","ReportDateTime","Headline","""jmx_eb:Coordinate""","Area","""jmx_eb:Magnitude""",'ForecastComment']
 
    for a in tags :
       if a == "Headline":
         koumoku.append(soup.find(a).find("Text").get_text()) 
       elif a == """jmx_eb:Coordinate""":
         koumoku.append(soup.find(a).get("description") )
-        koumoku.append(soup.find(a).get_text()) 
+        koumoku.append(soup.find(a).get_text().replace("+"," +") ) 
+      elif a == "Area":
+        koumoku.append(soup.find(a).find("Name").get_text())
       elif a == """jmx_eb:Magnitude""":
         koumoku.append("M "+soup.find(a).get_text())      
       else:
