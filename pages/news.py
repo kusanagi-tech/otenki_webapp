@@ -1,29 +1,39 @@
 import streamlit as st
 import requests as req
+import pandas as pd
 
 st.header("🎌 Japan NewsAPI",anchor='section1',divider='rainbow')
 
-
+headers = {'X-Api-Key': st.secrets["NEWSAPI"]}
 NEWSAPI = st.secrets["NEWSAPI"]
-BASEURL = """https://newsapi.org/v2/top-headlines?country=jp&"""
-BASEURL2 = """https://newsapi.org/v2/top-headlines?country=jp&category="""
+BASEURL = """https://newsapi.org/v2/top-headlines"""
 
 category = { 
-   "Headline": BASEURL+"""apiKey="""+NEWSAPI,
-   "Business": BASEURL2+"""business&apiKey="""+NEWSAPI,
-   "Sports": BASEURL2+"""sports&apiKey="""+NEWSAPI,
-   "Entertainments": BASEURL2+"""entertainment&apiKey="""+NEWSAPI,
-   "Science": BASEURL2+"""science&apiKey="""+NEWSAPI,
-   "technology": BASEURL2+"""technology&apiKey="""+NEWSAPI,
+   "Headline": None,
+   "Business": "business",
+   "Sports": "sports",
+   "Entertainments": "entertainment",
+   "Science": "science",
+   "Technology":"technology",
 
 }
 
-params = st.selectbox("**ニュースを選択**", category,index = 0 )
-res = req.get(category[params])
+selection = st.selectbox("**ニュースを選択**", category , index = 0 )
+
+if selection == "Headline":
+  params = {'country':'jp'}
+else:
+  params = {'country':'jp', "category" : category[selection]}
+
+res = req.get(BASEURL,headers=headers ,params=params)
 news = res.json()
 
-#st.write(news)
+#見出しだけにしたい場合
+#import pandas as pd
+#df = pd.DataFrame(news["articles"])
+#st.table(df['title'])
 
+#URLを表示したい場合
 keys = ['title','url' ]
 count = len(news['articles'])
 for n in range(count):
@@ -33,5 +43,6 @@ for n in range(count):
         st.write(f"**🟩 { base[i]}**  {base['publishedAt']}")
     else:
         st.write(f"{base[i]}   ")
+
 st.divider()
 st.markdown("[go to Top](#section1)")
