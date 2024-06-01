@@ -5,7 +5,6 @@ import pandas as pd
 st.header("🎌 Japan NewsAPI",anchor='section1',divider='rainbow')
 
 headers = {'X-Api-Key': st.secrets["NEWSAPI"]}
-NEWSAPI = st.secrets["NEWSAPI"]
 BASEURL = """https://newsapi.org/v2/top-headlines"""
 
 category = { 
@@ -15,7 +14,6 @@ category = {
    "Entertainments": "entertainment",
    "Science": "science",
    "Technology":"technology",
-
 }
 
 selection = st.selectbox("**ニュースを選択**", category , index = 0 )
@@ -36,6 +34,7 @@ news = res.json()
 #URLを表示したい場合
 keys = ['title','url' ]
 count = len(news['articles'])
+
 for n in range(count):
   for i in keys:
     base = news['articles'][n]
