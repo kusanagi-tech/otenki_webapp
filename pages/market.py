@@ -17,7 +17,7 @@ swap = st.number_input("スワップ", value=35, placeholder="Type a number...")
 souba = 4.8
 yosan = int(souba*10000/leverage)
 
-nakami = np.array([swap,swap*30,swap*365,yosan] )
+nakami = np.array([swap,swap*7,swap*30,swap*365,yosan] )
 tuuka = [1,3,5,10,20,30,40,50,60,70,80,90,100]
 kanji = "万通貨"
 
@@ -26,7 +26,7 @@ for i in tuuka:
     mydata.append(nakami*i) 
 
 index  = [ str(i) + kanji for i in tuuka ]
-colmns = ["日額","月額","年額",f"予算（レバ{leverage}倍）"]
+colmns = ["日額","週額","月額","年額",f"予算（レバ{leverage}倍）"]
 yukou =  mydata[0][3]/2000*100
 
 df = pd.DataFrame(data=mydata, index = index, columns = colmns)
