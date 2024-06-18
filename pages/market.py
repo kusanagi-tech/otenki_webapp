@@ -27,7 +27,7 @@ for i in tuuka:
 
 index  = [ str(i) + kanji for i in tuuka ]
 colmns = ["日額","週額","月額","年額",f"予算（レバ{leverage}倍）"]
-yukou =  mydata[0][3]/2000*100
+yukou =  mydata[0][4]/2000*100
 
 df = pd.DataFrame(data=mydata, index = index, columns = colmns)
 
