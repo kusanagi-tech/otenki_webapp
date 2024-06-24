@@ -19,6 +19,9 @@ X は対象となるデータ値
 =GOOGLEFINANCE("USDJPY", "price", DATE(2024,1,1), DATE(2024,6,23), "daily")
 =STDEV.P(B4:B177)
 =AVERAGE(B4:B177)
-""")
+以上は絶対的な表記なので、相対的な表記にすると、  
+=GOOGLEFINANCE("ETHJPY","price",TODAY()-30,TODAY())
+こうすると日数が経過すると常に30日前から自動で再計算します。""")
+
 st.divider()
 st.markdown("[go to Top](#section1)")
