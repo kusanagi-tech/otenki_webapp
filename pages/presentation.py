@@ -22,6 +22,10 @@ X は対象となるデータ値
 以上は絶対的な表記なので、相対的な表記にすると、  
 =GOOGLEFINANCE("ETHJPY","price",TODAY()-30,TODAY())
 こうすると日数が経過すると常に30日前から自動で再計算します。""")
+st.divider()
+st.markdown("[go to Top](#section1)")
 
+st.image('images/btceth.png', caption='zscore2')
+st.write("ビットコインとイーサリアムを、Zスコアで値下がり比率を比べるとほぼ同じ割合で下がっています。")
 st.divider()
 st.markdown("[go to Top](#section1)")
