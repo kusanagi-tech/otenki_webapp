@@ -18,6 +18,12 @@ def zscore(x):
   data = (x-np.mean(x))/stdev
   return data
 
+#scipyモジュールを使用する方法
+#import scipy.stats as stats
+# def zscore(x):
+#   data = stats.zscore(x)
+#   return data
+
 plt.figure(figsize=(10,5))
 plt.title(f" {ticker[0]} and {ticker[1]} Zscore")
 plt.ylabel("Price")
@@ -42,7 +48,7 @@ X は対象となるデータ値
 Zスコアは単位が違うものを比較評価するために使います。  
 たとえばJT（日本たばこ産業）"2914.T"と東京エレクトロン"8035.T"の株を同じ金額で買ったら、どちらが得だったのか？というのがわかります。  
 
-見当がつくと思いますが、2024年7月の時点ではJTの方が得だったということがわかります。
+見当がつくと思いますが、2024年3-4月の時点では東京エレクトロンの方が得、2024年7月の時点ではJTの方が得だったということがわかります。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
