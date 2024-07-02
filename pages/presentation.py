@@ -3,36 +3,48 @@ import streamlit as st
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
 st.image('images/tyo.png', caption='zscore')
 st.code("""
-
 import yfinance as yf
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-ticker = ["2914.T","8035.T"] #比較銘柄を代入
-data0 = yf.download(ticker[0],period="6mo",interval="1d")
-data1 = yf.download(ticker[1],period="6mo",interval="1d")
+#銘柄を代入
+ticker = ["2914.T","8035.T"]
+#ticker = ["AAPL","MSFT","GOOG","AMZN","META","NVDA","TSLA"]
+#ticker =["USDJPY=X","NZDJPY=X"]
+
+count = len(ticker)
+data ={}
+
+for i in range(count):
+  data[ticker[i]]=yf.download(ticker[i],period="6mo",interval="1d").Close
 
 def zscore(x):
   stdev = np.std(x)
-  data = (x-np.mean(x))/stdev
-  return data
+  zdata = (x-np.mean(x))/stdev
+  return zdata
 
 #scipyモジュールを使用する方法
-#import scipy.stats as stats
+# import scipy.stats as stats 
 # def zscore(x):
-#   data = stats.zscore(x)
-#   return data
+#   zdata = stats.zscore(x)
+#   return zdata
+
+#相場(終値）をそのまま出力する場合
+# def zscore(x):
+#   zdata = x
+#   return zdata
 
 plt.figure(figsize=(10,5))
-plt.title(f" {ticker[0]} and {ticker[1]} Zscore")
+plt.title(f"Zscore {ticker}")
 plt.ylabel("Price")
 plt.xlabel("Date")
-plt.plot(zscore(data0.Close),label=ticker[0])
-plt.plot(zscore(data1.Close),label=ticker[1])
+
+for i in data.keys():
+  plt.plot(zscore(data[i]),label=i)
 plt.legend()
 plt.show()
-        """)
+""")
 st.write("""
 Zスコアは、以下の式で計算できます。  
 
