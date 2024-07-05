@@ -40,6 +40,9 @@ plt.title(f"Zscore {ticker}")
 plt.ylabel("Price")
 plt.xlabel("Date")
 
+#Xラベルを回転させたい場合
+#plt.xticks(rotation=45)
+
 for i in data.keys():
   plt.plot(zscore(data[i]),label=i)
 plt.legend()
@@ -65,11 +68,8 @@ Zスコアは単位が違うものを比較評価するために使います。
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/btceth.png', caption='zscore2')
-st.write("ビットコインとイーサリアムを、Zスコアで値下がり比率を比べるとほぼ同じ割合で下がっています。")
-st.divider()
-st.markdown("[go to Top](#section1)")
-st.image('images/btcusd.png', caption='zscore3')
-st.write("ビットコインと米ドルを、Zスコアで比べると騰落は、ほぼ同じ割合で反転しています。")
+st.image('images/gaitame.png', caption='zscore2')
+st.write("為替のZスコアを作ると、上昇傾向はほぼ変わりません。これは各外為に対して円が下がっているのです。")
+
 st.divider()
 st.markdown("[go to Top](#section1)")
