@@ -73,3 +73,13 @@ st.write("為替のZスコアを作ると、上昇傾向はほぼ変わりませ
 
 st.divider()
 st.markdown("[go to Top](#section1)")
+
+st.image('images/coin.png', caption='zscore2')
+st.write("""
+暗号資産は相場全体が大暴落しています。いったい何があったのでしょうか？  
+BTC(ビットコイン)が大暴落！価格が54,000ドル割れ、Mt. Goxとドイツ政府の動きが原因か？  
+https://cc.minkabu.jp/news/9626
+         """)
+
+st.divider()
+st.markdown("[go to Top](#section1)")
