@@ -83,3 +83,11 @@ https://cc.minkabu.jp/news/9626
 
 st.divider()
 st.markdown("[go to Top](#section1)")
+
+st.image('images/mix.png', caption='zscore2')
+st.write("""
+Zスコアだと単価の違うものが比較できます。半年の期間で比較すると、ドル円のFXペアがピットコインより強いです。ただし比較する時期と期間で結果が違うのでこの点は注意が必要です。
+         """)
+
+st.divider()
+st.markdown("[go to Top](#section1)")
