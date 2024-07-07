@@ -4,6 +4,6 @@ feedparser
 bs4
 lxml
 yfinance
-matplotlib.pyplot
+matplotlib
 datetime
 re
