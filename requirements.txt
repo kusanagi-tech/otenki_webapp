@@ -6,4 +6,4 @@ lxml
 yfinance
 matplotlib
 datetime
-re
+
