@@ -14,7 +14,7 @@ leverage = st.select_slider(
     "**レバレッジは何倍にする？**(1〜25倍:0.5単位)",options=np.arange(1,25.5,0.5),value = 3.0)
 swap = st.number_input("スワップ", value=36, placeholder="Type a number...")
 
-souba = 4.9
+souba = 4.8
 yosan = int(souba*10000/leverage)
 
 nakami = np.array([swap,swap*7,swap*30,swap*365,yosan] )

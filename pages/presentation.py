@@ -73,3 +73,9 @@ st.write("2024年７月11日の為替介入と見られるドル円の動き（�
 
 st.divider()
 st.markdown("[go to Top](#section1)")
+
+st.image('images/kainyuZ202407.png', caption='zscore3')
+st.write("2024年７月11日の為替介入と見られる為替のZスコア（時系列はUTC）")
+
+st.divider()
+st.markdown("[go to Top](#section1)")
