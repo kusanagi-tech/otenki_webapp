@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
+import re
 
 st.header("🇺🇸ドル増減率計算",anchor='section1',divider='rainbow')
 
