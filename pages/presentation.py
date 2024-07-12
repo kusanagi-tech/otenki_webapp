@@ -68,26 +68,8 @@ Zスコアは単位が違うものを比較評価するために使います。
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame.png', caption='zscore2')
-st.write("為替のZスコアを作ると、上昇傾向はほぼ変わりません。これは各外為に対して円が下がっているのです。")
-
-st.divider()
-st.markdown("[go to Top](#section1)")
-
-st.image('images/coin.png', caption='zscore2')
-st.write("""
-暗号資産は相場全体が大暴落しています。いったい何があったのでしょうか？  
-BTC(ビットコイン)が大暴落！価格が54,000ドル割れ、Mt. Goxとドイツ政府の動きが原因か？  
-https://cc.minkabu.jp/news/9626
-         """)
-
-st.divider()
-st.markdown("[go to Top](#section1)")
-
-st.image('images/mix.png', caption='zscore2')
-st.write("""
-Zスコアだと単価の違うものが比較できます。半年の期間で比較すると、ドル円のFXペアがピットコインより強いです。ただし比較する時期と期間で結果が違うのでこの点は注意が必要です。
-         """)
+st.image('images/kainyu202407.png', caption='zscore2')
+st.write("2024年７月11日の為替介入と見られるドル円の動き（赤が陰線（下降線））")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
