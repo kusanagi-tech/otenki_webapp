@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+#為替レートの自動取得
+import requests as req
+def currency_ask(x,y = 'ask'):
+  URL = """https://forex-api.coin.z.com/public/v1/ticker"""
+  res = req.get(URL)
+  ticker = res.json()['data']
+  return ticker[x][y]
+mytry = round(float(currency_ask(8)),3)
+
 st.header("🇹🇷 トルコリラスワップ試算",anchor='section1',divider='rainbow')
 
 #プルダウンセレクターで計算する。
@@ -12,9 +21,9 @@ st.header("🇹🇷 トルコリラスワップ試算",anchor='section1',divider
 #スライダーで計算する
 leverage = st.select_slider(
     "**レバレッジは何倍にする？**(1〜25倍:0.5単位)",options=np.arange(1,25.5,0.5),value = 3.0)
-swap = st.number_input("スワップ", value=36, placeholder="Type a number...")
+swap = st.number_input("スワップ", value=38, placeholder="Type a number...")
 
-souba = 4.8
+souba = mytry
 yosan = int(souba*10000/leverage)
 
 nakami = np.array([swap,swap*7,swap*30,swap*365,yosan] )
