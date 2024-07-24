@@ -67,23 +67,18 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin2.png', caption='zscore2')
-st.write("暗号資産相場は急上昇")
+st.image('images/coin3.png', caption='zscore2')
+st.write("暗号資産相場はトランプ相場で返り咲き")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/kainyuZ202407.png', caption='zscore3')
-st.write("2024年７月11〜13日の為替介入と見られる為替のZスコア（時系列はUTC）")
-
-st.divider()
-st.markdown("[go to Top](#section1)")
-
-st.image('images/usdjpy20240717.png', caption='')
+st.image('images/gaitame240725.png', caption='zscore3')
 st.write("""
-トランプ前大統領が円安・ドル高に懸念　約1か月ぶりの円高水準1ドル＝156円台前半に｜TBS NEWS DIG  
-https://youtu.be/8FRxmRzmBrc?si=OEz_WfyisOyT-cQ8
-         """)
+         2024年７月22〜25日の為替のZスコア（時系列はUTC）  
+         円高進行　一時1ドル＝153円台前半に　日銀の利上げ観測が影響か  
+         https://youtu.be/zJQu9F0EfOs?si=1e1aa8_tJcPzPztO""")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
+
