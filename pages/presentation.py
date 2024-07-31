@@ -73,11 +73,12 @@ st.write("暗号資産相場はトランプ相場で返り咲き")
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame240725.png', caption='zscore3')
+st.image('images/gaitame240729.png', caption='zscore3')
 st.write("""
-         2024年７月22〜25日の為替のZスコア（時系列はUTC）  
-         円高進行　一時1ドル＝153円台前半に　日銀の利上げ観測が影響か  
-         https://youtu.be/zJQu9F0EfOs?si=1e1aa8_tJcPzPztO""")
+         2024年７月29日〜の為替のZスコア（時系列はUTC）  
+         【速報】日銀　利上げを決定　0％～0.15％→0.25％　賛成7 反対2の賛成多数｜TBS NEWS DIG  
+         https://youtu.be/XNbvttrvYTU?si=ODdNmyilae5OiPr9
+""")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
