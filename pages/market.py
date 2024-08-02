@@ -12,6 +12,7 @@ def currency_ask(x,y = 'ask'):
 mytry = round(float(currency_ask(8)),3)
 
 st.header("🇹🇷 トルコリラスワップ試算",anchor='section1',divider='rainbow')
+st.warning("**:red[現在為替相場は、日米金利差縮小で、円高傾向にあり、金利より元本割れのリスクが大きいです。]**")
 
 #プルダウンセレクターで計算する。
 # leverage = st.selectbox(
@@ -26,7 +27,7 @@ swap = st.number_input("スワップ", value=38, placeholder="Type a number...")
 souba = mytry
 yosan = int(souba*10000/leverage)
 
-nakami = np.array([swap,swap*7,swap*30,swap*365,yosan] )
+nakami = np.array([swap,swap*7,swap*30,yosan] )
 tuuka = [1,2,3,4,5,6,7,8,9,10,20,30,40,50]
 kanji = "万通貨"
 
@@ -35,8 +36,8 @@ for i in tuuka:
     mydata.append(nakami*i) 
 
 index  = [ str(i) + kanji for i in tuuka ]
-colmns = ["日額","週額","月額","年額",f"予算（レバ{leverage}倍）"]
-yukou =  mydata[0][4]/2000*100
+colmns = ["日額","週額","月額",f"予算（レバ{leverage}倍）"]
+yukou =  mydata[0][3]/2000*100
 
 df = pd.DataFrame(data=mydata, index = index, columns = colmns)
 
