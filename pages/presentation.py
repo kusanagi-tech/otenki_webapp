@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/tyo.png', caption='zscore')
+st.image('images/nikkeidaibouraku240784.png', caption='日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -61,14 +61,13 @@ X は対象となるデータ値
 となります。  
 
 Zスコアは単位が違うものを比較評価するために使います。  
-たとえばJT（日本たばこ産業）"2914.T"と東京エレクトロン"8035.T"の株を同じ金額で買ったら、どちらが得だったのか？というのがわかります。  
-
-見当がつくと思いますが、2024年3-4月の時点では東京エレクトロンの方が得、2024年7月の時点ではJTの方が得だったということがわかります。
+日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅(24/08/02)  
+https://youtu.be/D_jvjdILBjk?si=Hfl9Ly-gejffCGoB
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin3.png', caption='zscore2')
-st.write("暗号資産相場はトランプ相場で返り咲き")
+st.image('images/magseven240784.png', caption='zscore2')
+st.write("米国株のZスコア")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
