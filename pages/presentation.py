@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkeidaibouraku240784.png', caption='日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅')
+st.image('images/nikkei0812.png', caption='日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -61,22 +61,20 @@ X は対象となるデータ値
 となります。  
 
 Zスコアは単位が違うものを比較評価するために使います。  
-日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅(24/08/02)  
-https://youtu.be/D_jvjdILBjk?si=Hfl9Ly-gejffCGoB
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/magseven240784.png', caption='zscore2')
-st.write("米国株のZスコア")
+st.image('images/coin4.png', caption='zscore2')
+st.write("暗号資産の動き")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame240729.png', caption='zscore3')
+st.image('images/gaitame240812.png', caption='zscore3')
 st.write("""
-         2024年７月29日〜の為替のZスコア（時系列はUTC）  
-         【速報】日銀　利上げを決定　0％～0.15％→0.25％　賛成7 反対2の賛成多数｜TBS NEWS DIG  
-         https://youtu.be/XNbvttrvYTU?si=ODdNmyilae5OiPr9
+         2024年８月１日〜の為替のZスコア（時系列はUTC）  
+         どれも大暴落を狙ってしたたかに買いをいれてる人がいます。  
+
 """)
 
 st.divider()
