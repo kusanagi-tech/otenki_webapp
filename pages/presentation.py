@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei0812.png', caption='日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅')
+st.image('images/nikkei0819.png', caption='日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,16 +64,16 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin4.png', caption='zscore2')
-st.write("暗号資産の動き")
+st.image('images/coin5.png', caption='zscore2')
+st.write("暗号資産の動き。ライトコインはせっせと買われています。")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame240812.png', caption='zscore3')
+st.image('images/gaitame240819.png', caption='zscore3')
 st.write("""
-         2024年８月１日〜の為替のZスコア（時系列はUTC）  
-         どれも大暴落を狙ってしたたかに買いをいれてる人がいます。  
+         2024年８月12日〜の為替のZスコア（時系列はUTC）  
+        どの相場も荒れ気味です。
 
 """)
 
