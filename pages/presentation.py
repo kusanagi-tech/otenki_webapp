@@ -64,16 +64,16 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin5.png', caption='zscore2')
-st.write("暗号資産の動き。ライトコインはせっせと買われています。")
+st.image('images/coin6.png', caption='zscore2')
+st.write("暗号資産の動き")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame240819.png', caption='zscore3')
+st.image('images/gaitame240824.png', caption='zscore3')
 st.write("""
-         2024年８月12日〜の為替のZスコア（時系列はUTC）  
-        どの相場も荒れ気味です。
+         2024年８月19日〜の為替のZスコア（時系列はUTC）  
+        円高ドル安の傾向
 
 """)
 
