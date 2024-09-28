@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei0819.png', caption='日経平均株価2,216円急落 87年「ブラックマンデー」以来史上2番目の下げ幅')
+st.image('images/nikkei0929.png', caption='日経平均株価の動き')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,16 +64,16 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin6.png', caption='zscore2')
+st.image('images/coin7.png', caption='zscore2')
 st.write("暗号資産の動き")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame240824.png', caption='zscore3')
+st.image('images/gaitame240929.png', caption='zscore3')
 st.write("""
-         2024年８月19日〜の為替のZスコア（時系列はUTC）  
-        円高ドル安の傾向
+         2024年9月23日〜の為替のZスコア（時系列はUTC）  
+        株価は石破ショック直前までの動きなので、2024年の10月からの全相場の動きは要注意です。
 
 """)
 
