@@ -12,7 +12,7 @@ def currency_ask(x,y = 'ask'):
 mytry = round(float(currency_ask(8)),3)
 
 st.header("🇹🇷 トルコリラスワップ試算",anchor='section1',divider='rainbow')
-st.warning("**:red[現在為替相場は、日米金利差縮小で、円高傾向にあり、金利より元本割れのリスクが大きいです。]**")
+#st.warning("**:red[現在為替相場は、日米金利差縮小で、円高傾向にあり、金利より元本割れのリスクが大きいです。]**")
 
 #プルダウンセレクターで計算する。
 # leverage = st.selectbox(
@@ -21,8 +21,8 @@ st.warning("**:red[現在為替相場は、日米金利差縮小で、円高傾�
 
 #スライダーで計算する
 leverage = st.select_slider(
-    "**レバレッジは何倍にする？**(1〜25倍:0.5単位)",options=np.arange(1,25.5,0.5),value = 3.0)
-swap = st.number_input("スワップ", value=38, placeholder="Type a number...")
+    "**レバレッジは何倍にする？**(1〜25倍:0.5単位)",options=np.arange(1,25.5,0.5),value = 4.0)
+swap = st.number_input("スワップ", value=40, placeholder="Type a number...")
 
 souba = mytry
 yosan = int(souba*10000/leverage)
