@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei1005.png', caption='乱高下している日経平均株価の動き')
+st.image('images/nikkei1017.png', caption='一ヶ月の日経平均株価の動き')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,23 +64,16 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin8.png', caption='zscore2')
-st.write("暗号資産の動き")
+st.image('images/coin9.png', caption='zscore2')
+st.write("暗号資産は急上昇")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame241005.png', caption='zscore3')
+st.image('images/gaitame241017.png', caption='zscore3')
 st.write("""
-         2024年9月30日〜の為替のZスコア（時系列はUTC）  
+         一ヶ月間の為替の動きは、円安傾向です。  
 
-        ◆10月4日の米雇用統計の発表で、円安ドル高が進行。  
-        https://youtu.be/Kv7Qfhr5X80?si=vm5Lsa7utw0nFQ0y  
-        ◆米雇用統計カウントダウン（21：30分）  
-        https://www.youtube.com/live/FEKU0lX7JeI?si=_AqLxmvUafqKFjCl&t=1740          
-        ◆石破ショック回避策「利上げする環境にない」  
-         https://youtu.be/eSTDB0S-AFo?si=iHQI5WiKZYFF7-2c  
-         円高になると日本の株価がさがるという状況を回避しないといけないのです。
 """)
 
 st.divider()
