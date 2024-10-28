@@ -57,7 +57,7 @@ pd.options.display.float_format = '{:.3f}'.format
 a = data[i]
 average = a.sum()/len(a)
 stdev = np.std(a)
-per = 100-(a[0]/a[-1]*100)
+#per = 100-(a[0]/a[-1]*100)
 per = 1
 
 st.write(F"**📝{ticker} 相場：{days}日前からの終値（自動更新）**")
