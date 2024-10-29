@@ -59,7 +59,6 @@ average = a.sum()/len(a)
 stdev = np.std(a)
 #per = int(100-(a[0]/a[-1]*100))
 
-
 st.write(F"**📝{ticker} 相場：{days}日前からの終値（自動更新）**")
 
 # if per > 0:
@@ -67,7 +66,6 @@ st.write(F"**📝{ticker} 相場：{days}日前からの終値（自動更新）
 # else:
 #   st.write(f"**平均{average:.2f}　標準偏差{stdev:.4}　増減率 :red[{per:.4}％]**")
 
-st.write(f"**平均{average:.2f}　標準偏差{stdev:.4}　増減率 :blue[{per:.4}％]**")
 st.text(a)
 
 st.divider()
