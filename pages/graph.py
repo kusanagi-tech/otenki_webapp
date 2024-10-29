@@ -65,7 +65,7 @@ st.write(F"**📝{ticker} 相場：{days}日前からの終値（自動更新）
 #   st.write(f"**平均{average:.2f}　標準偏差{stdev:.4}　増減率 :blue[{per:.4}％]**")
 # else:
 #   st.write(f"**平均{average:.2f}　標準偏差{stdev:.4}　増減率 :red[{per:.4}％]**")
-st.write("average:",round(average,3),"stdev:",round(stdev,4))
+st.text("average:",round(average,3),"stdev:",round(stdev,4))
 st.text(a)
 
 st.divider()
