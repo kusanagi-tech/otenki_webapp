@@ -67,7 +67,7 @@ st.write(F"**📝{ticker} 相場：{days}日前からの終値（自動更新）
 #   st.write(f"**平均{average:.2f}　標準偏差{stdev:.4}　増減率 :red[{per:.4}％]**")
 
 st.write(f"**平均{average[0]:.2f}　標準偏差{stdev[0]:.4}**")
-st.text(a)
+st.text(a[0][1])
 
 st.divider()
 st.markdown("[go to Top](#section1)")
