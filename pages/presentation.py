@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei1102.png', caption='一ヶ月の日経平均株価の動き')
+st.image('images/nikkei1109.png', caption='一ヶ月の日経平均株価の動き')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,15 +64,15 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin10.png', caption='zscore2')
-st.write("暗号資産はやや下がり気味")
+st.image('images/coin11.png', caption='zscore2')
+st.write("イーサリアムの上昇が顕著")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame241102.png', caption='zscore3')
+st.image('images/gaitame241109.png', caption='zscore3')
 st.write("""
-         メキシコペソとAUドルの値動きが粗い。何かあったのか？
+         トランプ勝利相場で一時的にドルは急上昇
 """)
 
 st.divider()
