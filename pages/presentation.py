@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei1109.png', caption='一ヶ月の日経平均株価の動き')
+st.image('images/nikkei1117.png', caption='一ヶ月の日経平均株価の動き 温泉株が躍進')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,15 +64,16 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin11.png', caption='zscore2')
-st.write("イーサリアムの上昇が顕著")
+st.image('images/coin12.png', caption='zscore2')
+st.write("リップルの上昇が顕著")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame241109.png', caption='zscore3')
+st.image('images/gaitame241117.png', caption='zscore3')
 st.write("""
-         トランプ勝利相場で一時的にドルは急上昇
+         ドル優勢、ユーロ劣勢、トルコリラはドルと連動しているので上昇  
+         ◆暗号資産相場は、全体的に上昇していますが、首位のビットコインの単価が高いので、３番手４番手のライトコインやリップルが買い貯めされています。ライトコインやビットコインキャッシュはビットコインと構造が似ています。リップルは独自構造で、送金の速さが売りです。これは上位にランクインしています。
 """)
 
 st.divider()
