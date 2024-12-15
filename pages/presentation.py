@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei1124.png', caption='一ヶ月の日経平均株価の動き、醤油株下落、石油株上昇')
+st.image('images/nikkei1215.png', caption='一ヶ月の日経平均株価の動き、日経平均は徐々に上昇')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,15 +64,15 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin13.png', caption='zscore2')
-st.write("暗号資産は盛況")
+st.image('images/coin14.png', caption='zscore2')
+st.write("暗号資産は利確売りの下降が混じっている")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame241124.png', caption='zscore3')
+st.image('images/gaitame241215.png', caption='zscore3')
 st.write("""
-         ドル優勢、ユーロ劣勢の状況は継続
+         為替は再び円安傾向
 """)
 
 st.divider()
