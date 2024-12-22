@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei1215.png', caption='一ヶ月の日経平均株価の動き、日経平均は徐々に上昇')
+st.image('images/nikkei1222.png', caption='一ヶ月の日経平均株価の動き、上昇か下降か読めない相場')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,15 +64,24 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin14.png', caption='zscore2')
-st.write("暗号資産は利確売りの下降が混じっている")
+st.image('images/coin15.png', caption='zscore2')
+st.write("暗号資産のバブルが弾けた模様だが、大幅な下落はしていない。")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
-st.image('images/gaitame241215.png', caption='zscore3')
+st.image('images/gaitame241222.png', caption='zscore3')
 st.write("""
-         為替は再び円安傾向
+         為替は再び強烈な円安傾向
+""")
+
+st.divider()
+st.markdown("[go to Top](#section1)")
+
+st.image('images/uskokusai1223.png', caption='zscore4')
+st.write("""
+        ticker = ["^IRX","^FVX","^TNX","^TYX"]  
+        #米国債金利　13週,5,10,30年　13週の短期金利が大幅に下落
 """)
 
 st.divider()
