@@ -54,6 +54,7 @@ st.text(now)
 st.text(df.sort_values('LastPrice',ascending=False))
 
 st.divider()
-st.write("結局,GMOのコインのAPIを使いました。為替以上に相場が強烈に乱高下するので、レバレッジ取引はやめたほうがいいです。二番手はイーサリアム（ETH）です。暗号資産の投資信託が”海外で”承認されたので、去年よりイーサリアムは値上がりしています。")
-st.write('https://diamond.jp/crypto/market/bitcoin-etf/')
+st.write('暗号資産は税金の計算に要注意です。')
+st.write("https://youtu.be/lq1z_6DeWDM?si=roswKKHCEk66e9iP")
+
 st.markdown("[go to Top](#section1)")
