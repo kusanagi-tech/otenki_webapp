@@ -22,7 +22,7 @@ st.header("🇹🇷 トルコリラスワップ試算",anchor='section1',divider
 #スライダーで計算する
 leverage = st.select_slider(
     "**レバレッジは何倍にする？**(1〜25倍:0.5単位)",options=np.arange(1,25.5,0.5),value = 4.0)
-swap = st.number_input("スワップ", value=40, placeholder="Type a number...")
+swap = st.number_input("スワップ", value=37, placeholder="Type a number...")
 
 souba = mytry
 yosan = int(souba*10000/leverage)

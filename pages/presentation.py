@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.header("✏️グラフ作成📈",anchor='section1',divider='rainbow')
-st.image('images/nikkei0110.png', caption='一ヶ月の日経平均株価の動き、やや頭打ちの相場')
+st.image('images/nikkei250201.png', caption='一ヶ月の日経平均株価の動き。上昇できず。')
 st.code("""
 import yfinance as yf
 import pandas as pd
@@ -64,17 +64,25 @@ Zスコアは単位が違うものを比較評価するために使います。
 """)
 st.divider()
 st.markdown("[go to Top](#section1)")
-st.image('images/coin16.png', caption='zscore2')
-st.write("""米司法省が69,370 BTC（約1兆円相当）のビットコインを売却する許可を裁判所から得たとの報道で下落  
-         https://coinpost.jp/?p=586225""")
+st.image('images/coin17.png', caption='zscore2')
+st.write("""利確売りが目立つ動き。お手頃価格のライトコインとリップルは人気。""")
 
 st.divider()
 st.markdown("[go to Top](#section1)")
 
 st.image('images/gaitame250110.png', caption='zscore3')
 st.write("""
-         円安傾向だが、ポンドがやや下がり気味
+         為替は、やや下がってはいるものの以前と円安傾向はかわらず。
 """)
 
 st.divider()
 st.markdown("[go to Top](#section1)")
+
+st.image('images/magseven250201.png', caption='zscore3')
+st.write("""
+        エヌビディア大暴落　買い戻しの未来はあるのか？！よくよく見ると、マイクロソフトも下がっています。
+""")
+
+st.divider()
+st.markdown("[go to Top](#section1)")
+
